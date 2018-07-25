@@ -93,7 +93,7 @@ Make sure the right content type like `Content-Type: application/json; charset=u
 
 ```JSON
 {
-  "articles":[{
+  "articles": [{
     "slug": "how-to-train-your-dragon",
     "title": "How to train your dragon",
     "description": "Ever wonder how?",
@@ -109,8 +109,8 @@ Make sure the right content type like `Content-Type: application/json; charset=u
       "image": "https://i.stack.imgur.com/xHWG8.jpg",
       "following": false
     }
-  }, {
-    
+  },
+  {
     "slug": "how-to-train-your-dragon-2",
     "title": "How to train your dragon 2",
     "description": "So toothless",
@@ -186,7 +186,7 @@ If a request fails any validations, expect a 422 and errors in the following for
 
 ```JSON
 {
-  "errors":{
+  "errors": {
     "body": [
       "can't be empty"
     ]
@@ -212,7 +212,7 @@ If a request fails any validations, expect a 422 and errors in the following for
 Example request body:
 ```JSON
 {
-  "user":{
+  "user": {
     "email": "jake@jake.jake",
     "password": "jakejake"
   }
@@ -231,7 +231,7 @@ Required fields: `email`, `password`
 Example request body:
 ```JSON
 {
-  "user":{
+  "user": {
     "username": "Jacob",
     "email": "jake@jake.jake",
     "password": "jakejake"
@@ -260,7 +260,7 @@ Authentication required, returns a [User](#users-for-authentication) that's the 
 Example request body:
 ```JSON
 {
-  "user":{
+  "user": {
     "email": "jake@jake.jake",
     "bio": "I like to skateboard",
     "image": "https://i.stack.imgur.com/xHWG8.jpg"
